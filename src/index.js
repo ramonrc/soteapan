@@ -1,5 +1,15 @@
+var Chocolate = {
+    view: function() {
+      return(m("next",
+      m("h1", "Cocolate")
+))}}
 
-
+var Cafe = {
+    view: function() {
+      return(m("next",
+      m("h1", "Café")
+))}}
+    
 var Home = {
     view: function() {
         return(m("main",
@@ -8,7 +18,7 @@ var Home = {
             m('li', {class: "menu__button  menu__button--arrow"}, "Productos",
                 m('div', {class: "dropdown-container"}, m('ul',
                     m('li', {class: "menu__button"}, m("a", {href: "#!/ch"}, "Chocolate")),
-                    m('li', {class: "menu__button"}, m("a", {href: "#!/ca"}, "Café"))
+                    m('li', {class: "menu__button"}, m("a", {href: "#!/ca"}, "Cafe"))
                     )))
             )),
         m("div", {class: "title"}, m('h1', "San Francisco, Soteapan"))

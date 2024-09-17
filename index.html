@@ -1,13 +1,22 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
     <head>
-        <!-- head definitions go here -->
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link href="favicon.ico" rel="shortcut icon">
+        <title>CDIAR</title>
+        <link href="src/styles.css" rel="stylesheet" />
+        <script src="https://unpkg.com/mithril/mithril.js"></script>
+        <script src="src/index.js"></script>
+        </script>
     </head>
     <body>
-        <h1>San Francisco, Soteapan, Veracruz</h1>
-      <ul>
-        <li>Chocolate</li>
-        <li>Café</li>
-      </ul>
+        <script>
+          m.route(document.body, '/inicio', {
+            '/inicio': Home,
+            '/graph': Graph,
+            '/auth': Auth
+          })
+          </script>
     </body>
 </html>

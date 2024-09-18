@@ -1,13 +1,13 @@
 var Chocolate = {
     view: function() {
       return(m("next",
-      m("h1", "Cocolate")
+      m("h1", {class: "title"}, "Cocolate")
 ))}}
 
 var Cafe = {
     view: function() {
       return(m("next",
-      m("h1", "Café")
+      m("h1", {class: "title"}, "Café")
 ))}}
     
 var Home = {

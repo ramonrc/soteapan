@@ -5,7 +5,8 @@ var Chocolate = {
       return(m("next",
       m("h1", {class: "title"}, "Cocolate"),
       m("h2", "Proceso"),
-      m("iframe", {width="520", height: "300", src: "https://www.youtube.com/embed/olj88QaO9iM", allowfullscreen: ""}),
+      m("div", {class: "video-container"},
+        m("iframe", {width="520", height: "300", src: "https://www.youtube.com/embed/olj88QaO9iM", allowfullscreen: "" } ) ),
       m("h2", "Receta"), 
       m("div", {class: "whell"}, Receta ) 
 ))}}

@@ -6,7 +6,7 @@ var Chocolate = {
       m("h1", {class: "title"}, "Cocolate"),
       m("h2", "Proceso"),
       m("div", {class: "video-container"},
-        m("iframe", {src: "https://www.youtube.com/embed/olj88QaO9iM", allowfullscreen: "" } ) ),
+        m("iframe", {src: "Chocolate-seleccion.mp4", allowfullscreen: "" } ) ),
       m("h2", "Receta"), 
       m("div", {class: "whell"}, Receta ) 
 ))}}

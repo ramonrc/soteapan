@@ -1,7 +1,13 @@
+var Receta = "Preparar bebida caliente con una bola de 80gr, un litro de leche, un litro de agua, endulzando al gusto."
+
 var Chocolate = {
     view: function() {
       return(m("next",
-      m("h1", {class: "title"}, "Cocolate")
+      m("h1", {class: "title"}, "Cocolate"),
+      m("h2", "Proceso"),
+      m("iframe", {width="520", height: "300", src: "https://www.youtube.com/embed/olj88QaO9iM", allowfullscreen: ""})
+      m("h2", "Receta"), 
+      m("div", {class: "whell"}, Receta ) 
 ))}}
 
 var Cafe = {

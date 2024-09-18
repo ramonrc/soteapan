@@ -24,8 +24,8 @@ var Home = {
         m('nav', m('ul', {class: "menu menu--background"},
             m('li', {class: "menu__button  menu__button--arrow"}, "Productos",
                 m('div', {class: "dropdown-container"}, m('ul',
-                    m('li', {class: "menu__button"}, m("a", {href: "#!/ch"}, "Chocolate")),
-                    m('li', {class: "menu__button"}, m("a", {href: "#!/ca"}, "Cafe"))
+                    m('li', {class: "menu__button"}, m("a", {href: "#!/chocolate"}, "Chocolate")),
+                    m('li', {class: "menu__button"}, m("a", {href: "#!/cafe"}, "Cafe"))
                     )))
             )),
         m("div", {class: "title"}, m('h1', "San Francisco, Soteapan"))

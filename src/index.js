@@ -13,8 +13,8 @@ var Cafe = {
 var Home = {
     view: function() {
         return(m("main",
-        m("h1", {class: "title"}, "Comunidad"), 
-        m("a", {href: "https://atlas.inpi.gob.mx/popolucas-de-la-sierra-veracruz/"}, "popoluca"),
+        m("h1", {class: "title"}, "Comunidad"),
+        m("div", {class: "content"}, "Popoluca"),
         m('nav', m('ul', {class: "menu menu--background"},
             m('li', {class: "menu__button  menu__button--arrow"}, "Productos",
                 m('div', {class: "dropdown-container"}, m('ul',

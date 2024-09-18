@@ -7,12 +7,12 @@ var Chocolate = {
       m("h2", "Proceso"),
       m("div", {class: "video-container"}, m("iframe", {src: "media/Chocolate-seleccion.mp4", allowfullscreen: "" } ),
         m("iframe", {src: "media/Chocolate-tostado.mp4", allowfullscreen: "" } ),
-        m("iframe", {src: "media/Chocolate-tcanela.mp4", allowfullscreen: "" } ) ),
-      m("div", {class: "video-container"}, m("iframe", {src: "media/Chocolate-molino.mp4", allowfullscreen: "" } ) ),
-      m("div", {class: "video-container"}, m("iframe", {src: "media/Chocolate-metate.mp4", allowfullscreen: "" } ) ),
-      m("div", {class: "video-container"}, m("iframe", {src: "media/Chocolate-moldeado.mp4", allowfullscreen: "" } ) ),
-      m("div", {class: "video-container"}, m("iframe", {src: "media/Chocolate-empacado.mp4", allowfullscreen: "" } ) ),
-      m("div", {class: "video-container"}, m("iframe", {src: "media/Chocolate-pesado.mp4", allowfullscreen: "" } ) ),
+        m("iframe", {src: "media/Chocolate-tcanela.mp4", allowfullscreen: "" } ),
+        m("iframe", {src: "media/Chocolate-molino.mp4", allowfullscreen: "" } ),
+        m("iframe", {src: "media/Chocolate-metate.mp4", allowfullscreen: "" } ),
+        m("iframe", {src: "media/Chocolate-moldeado.mp4", allowfullscreen: "" } ),
+        m("iframe", {src: "media/Chocolate-empacado.mp4", allowfullscreen: "" } ),
+        m("iframe", {src: "media/Chocolate-pesado.mp4", allowfullscreen: "" } ) ),
       m("h2", "Receta"), 
       m("div", {class: "whell"}, Receta ) 
 ))}}

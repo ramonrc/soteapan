@@ -4,23 +4,35 @@ var Chocolate = {
     view: function() {
       return(m("next",
       m("h1", {class: "title"}, "Chocolate"),
-      m("h2", "Proceso"),
-      m("div", {class: "video-container"}, m("iframe", {src: "media/Chocolate-seleccion.mp4", allowfullscreen: "" } ),
-        m("iframe", {src: "media/Chocolate-tostado.mp4", allowfullscreen: "" } ),
-        m("iframe", {src: "media/Chocolate-tcanela.mp4", allowfullscreen: "" } ),
-        m("iframe", {src: "media/Chocolate-molino.mp4", allowfullscreen: "" } ),
-        m("iframe", {src: "media/Chocolate-metate.mp4", allowfullscreen: "" } ),
-        m("iframe", {src: "media/Chocolate-moldeado.mp4", allowfullscreen: "" } ),
-        m("iframe", {src: "media/Chocolate-empacado.mp4", allowfullscreen: "" } ),
-        m("iframe", {src: "media/Chocolate-pesado.mp4", allowfullscreen: "" } ) ),
-      m("h2", "Receta"), 
-      m("div", {class: "whell"}, Receta ) 
+      m("div", {class: "content"},
+        m("h2", "Proceso"),
+        m("div", {class: "video-container"},
+            m("iframe", {src: "media/Chocolate-seleccion.mp4", allowfullscreen: "" } ),
+            m("iframe", {src: "media/Chocolate-tostado.mp4", allowfullscreen: "" } ),
+            m("iframe", {src: "media/Chocolate-tcanela.mp4", allowfullscreen: "" } ),
+            m("iframe", {src: "media/Chocolate-molino.mp4", allowfullscreen: "" } ),
+            m("iframe", {src: "media/Chocolate-metate.mp4", allowfullscreen: "" } ),
+            m("iframe", {src: "media/Chocolate-moldeado.mp4", allowfullscreen: "" } ),
+            m("iframe", {src: "media/Chocolate-empacado.mp4", allowfullscreen: "" } ),
+            m("iframe", {src: "media/Chocolate-pesado.mp4", allowfullscreen: "" } ) ),
+        m("h2", "Receta"), 
+        m("div", {class: "whell"}, Receta )
+      ) 
 ))}}
 
 var Cafe = {
     view: function() {
       return(m("next",
-      m("h1", {class: "title"}, "Café")
+      m("h1", {class: "title"}, "Café"),
+      m("div", {class: "content"},
+        m("h2", "Proceso"),
+        m("div", {class: "video-container"},
+            m("iframe", {src: "media/Cafe-pelado.mp4", allowfullscreen: "" } ),
+            m("iframe", {src: "media/Cafe-tostado.mp4", allowfullscreen: "" } ),
+            m("iframe", {src: "media/Cafe-molido.mp4", allowfullscreen: "" } ),
+            m("iframe", {src: "media/Cafe-empacado.mp4", allowfullscreen: "" } ))
+        m("img", {src: "media/Cafe-listo.jpeg"})
+      ) 
 ))}}
     
 var Home = {

@@ -1,12 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+:root {
+  --font-google: 'Rubik', sans-serif;   
+}
+
 body {
   font-family: 'Droid Sans',sans-serif;
   background: #e4d2b8;
   font-size: 1.000em;
-  margin: 10px;
+  margin: 8px;
   }
 .input, .button {
   font: normal 10px Verdana;
-  margin: 10px;
+  margin: 8px;
 }
 h4 {
   padding-left: 0.83em;
@@ -131,10 +136,7 @@ sticky-table.dataTable thead .sorting_desc_disabled:after,
 sticky-table.dataTable thead .sorting_desc_disabled:before {
 bottom: .5em;
 }
-@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
-:root {
-  --font-google: 'Rubik', sans-serif;   
-}
+
 *,
 *::before,
 *::after {
@@ -147,7 +149,7 @@ body {
     height: 100vh;
 }
 nav {
-    max-width: 50rem;
+    max-width: 30rem;
     margin: 1rem auto;
     font-family: var(--font-google);
 }

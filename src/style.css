@@ -145,7 +145,7 @@ bottom: .5em;
     padding: 0;
 }
 body {
-    background-image: linear-gradient(70deg, #4fff8a, #53c0ff, #bf60ff);        
+    background-image: linear-gradient(70deg, #4fff8a, #53c0ff, #ff6060);        
     height: 100vh;
 }
 nav {
@@ -170,7 +170,7 @@ button {
     transition: 250ms;
     border-radius: 1em;
 }
-@media (min-width: 40rem) {    
+@media (min-width: 20rem) {    
     button {
         display: none;
     }
@@ -186,7 +186,7 @@ button:hover {
     position: relative;
     box-shadow: 0 0 .5rem var(--color-menu-dark);
 }  
-@media (min-width: 40rem) {    
+@media (min-width: 20rem) {    
     .menu {   
         display: flex;     
         flex-direction: row;              
@@ -210,7 +210,7 @@ button:hover {
 .menu__button:hover {
     background-color: #333;
 }
-@media (min-width: 40rem) {    
+@media (min-width: 20rem) {    
     .menu__button--arrow {   
         position: relative;        
     }  
@@ -247,7 +247,7 @@ button:hover {
     box-shadow: 0 0 2rem #222;        
 }
 /* Dropdown menu - desktop */
-@media (min-width: 40rem) {    
+@media (min-width: 20rem) {    
     .dropdown-container {        
         display: block;        
         position: absolute;
@@ -279,7 +279,7 @@ button:hover {
     display: block;
 }
 /* Dropdown menu content - desktop */
-@media (min-width: 40rem) {      
+@media (min-width: 20rem) {      
     .dropdown-container > ul {    
         transform: translate(0, -100%);        
     }
@@ -296,7 +296,7 @@ button:hover {
 .title {
     display: none;
 }
-@media (min-width: 40rem) {    
+@media (min-width: 20rem) {    
     .title {
         display: block;
         max-width: 50rem;

@@ -24,7 +24,7 @@ var Cafe = {
     view: function() {
       return(m("next",
       m("h1", {class: "title"}, "Café"),
-      m("div", {class: "content"},
+      m("div.app",
         m("h2", "Proceso"),
         m("div", {class: "video-container"},
             m("iframe", {src: "media/Cafe-pelado.mp4", allowfullscreen: "" } ),

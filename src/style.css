@@ -272,7 +272,7 @@ button:hover {
     padding-block: .75em;
 }
 .dropdown-container > ul > li:hover {
-    background-color: #0f381d;
+    background-color: #000000;
     color: #222;      
 }
 .menu__button.activated .dropdown-container{

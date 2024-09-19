@@ -31,7 +31,7 @@ var Cafe = {
             m("iframe", {src: "media/Cafe-tostado.mp4", allowfullscreen: "" } ),
             m("iframe", {src: "media/Cafe-molido.mp4", allowfullscreen: "" } ),
             m("iframe", {src: "media/Cafe-empacado.mp4", allowfullscreen: "" } )),
-        m("img", {src: "media/Cafe-listo.jpeg"})
+        m("img", {src: "media/Cafe-listo.jpeg", style: { width: '100%', height: '200px' }})
       ) 
 ))}}
     

@@ -1,12 +1,6 @@
-var Receta = "Bebida caliente: una bola de 80gr, un litro de leche, un litro de agua, endulzando al gusto."
+var Receta = "Bebida caliente: una bola de 80gr, un litro de leche, un litro de agua, endulzando al gusto.";
 
-var Chocolate = {
-    view: function() {
-      return(m("next",
-      m("h1", {class: "title"}, "Chocolate"),
-      m("div", {class: "content"},
-        m("h2", "Proceso"),
-        m("div", {class: "video-container"},
+var VideoCh = [
             m("iframe", {src: "media/Chocolate-seleccion.mp4", allowfullscreen: "" } ),
             m("iframe", {src: "media/Chocolate-tostado.mp4", allowfullscreen: "" } ),
             m("iframe", {src: "media/Chocolate-tcanela.mp4", allowfullscreen: "" } ),
@@ -14,7 +8,23 @@ var Chocolate = {
             m("iframe", {src: "media/Chocolate-metate.mp4", allowfullscreen: "" } ),
             m("iframe", {src: "media/Chocolate-moldeado.mp4", allowfullscreen: "" } ),
             m("iframe", {src: "media/Chocolate-empacado.mp4", allowfullscreen: "" } ),
-            m("iframe", {src: "media/Chocolate-pesado.mp4", allowfullscreen: "" } ) ),
+            m("iframe", {src: "media/Chocolate-pesado.mp4", allowfullscreen: "" } )
+];
+var current_vid = 0;
+function cycle_vid(){
+	if(current_vid++ == 7) current_vid = 0;
+}
+
+var Chocolate = {
+    view: function() {
+      return(m("next",
+      m("h1", {class: "title"}, "Chocolate"),
+      m("div", {class: "content"},
+        m("h2", "Proceso"),
+			m("button", {onclick: cycle_tag}, "Cycle Tag"),
+			m("hr"),
+        m("div", {class: "video-container"}, VideoCh[current_vid]
+         ),
         m("h2", "Receta"), 
         m("div", {class: "whell"}, Receta )
       ) 

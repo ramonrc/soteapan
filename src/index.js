@@ -10,7 +10,9 @@ var VideoCh = [
             m("iframe", {src: "media/Chocolate-empacado.mp4", allowfullscreen: "" } ),
             m("iframe", {src: "media/Chocolate-pesado.mp4", allowfullscreen: "" } )
 ];
+
 var current_vid = 0;
+
 function cycle_vid(){
 	if(current_vid++ == 7) current_vid = 0;
 }
@@ -30,18 +32,27 @@ var Chocolate = {
       ) 
 ))}}
 
+var VideoCa = [
+            m("iframe", {src: "media/Cafe-pelado.mp4", allowfullscreen: "" } ),
+            m("iframe", {src: "media/Cafe-tostado.mp4", allowfullscreen: "" } ),
+            m("iframe", {src: "media/Cafe-molido.mp4", allowfullscreen: "" } ),
+            m("iframe", {src: "media/Cafe-empacado.mp4", allowfullscreen: "" } )];
+
+function cycle_vic(){
+	if(current_vid++ == 3) current_vid = 0;
+}
+
 var Cafe = {
     view: function() {
       return(m("next",
       m("h1", {class: "title"}, "Café"),
-      m("div.app",
+      m("div", {class: "content"},
+        m("h2", "Variedades"),
+	m("ul", m("li", "Americano"), m("li", "Europeo"), m("li", "Expreso"), m("li", "Gourmet")),
         m("h2", "Proceso"),
-        m("div", {class: "video-container"},
-            m("iframe", {src: "media/Cafe-pelado.mp4", allowfullscreen: "" } ),
-            m("iframe", {src: "media/Cafe-tostado.mp4", allowfullscreen: "" } ),
-            m("iframe", {src: "media/Cafe-molido.mp4", allowfullscreen: "" } ),
-            m("iframe", {src: "media/Cafe-empacado.mp4", allowfullscreen: "" } )),
-        m("img", {src: "media/Cafe-listo.jpeg", style: { width: '100%'}})
+	m("div", {class: "button", onclick: cycle_vic}, "Siguiente video"),
+        m("div", {class: "video-container"}, VideoCa[current_vid] ),
+        m("img", {src: "media/Cafe-listo.jpeg", style: { width: '80%'}})
       ) 
 ))}}
     

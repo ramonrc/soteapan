@@ -21,7 +21,7 @@ var Chocolate = {
       m("h1", {class: "title"}, "Chocolate"),
       m("div", {class: "content"},
         m("h2", "Proceso"),
-			m("button", {onclick: cycle_tag}, "Cycle Tag"),
+			m("button", {onclick: cycle_vid}, "Siguiente video"),
 			m("hr"),
         m("div", {class: "video-container"}, VideoCh[current_vid]
          ),

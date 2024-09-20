@@ -20,6 +20,8 @@ var Chocolate = {
       return(m("next",
       m("h1", {class: "title"}, "Chocolate"),
       m("div", {class: "content"},
+        m("h2", "Variedades"),
+	m("ul", m("li", "Con canela"), m("li", "Con cardamomo")),
         m("h2", "Proceso"),
 	m("div", {class: "button", onclick: cycle_vid}, "Siguiente video"),
         m("div", {class: "video-container"}, VideoCh[current_vid] ),

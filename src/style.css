@@ -306,8 +306,7 @@ button:hover {
         user-select: none;
     }
     .title > h1 {
-        font-size: 7rem;
-        color: #ffffff40;
+        font-size: 2rem;
     }
 }
 .NONUNIQUE {

@@ -75,7 +75,8 @@ var Home = {
                     )))
             )),
         m("div", {class: "title"}, m('h1', "San Fernando, Soteapan")),
-	NarracionCafe
+	NarracionCafe,
+	m("div", {class: "video-container"}, m("iframe", {src: "media/VideoCafe.mp4", allowfullscreen: "" } ))
         ))
     }
 }

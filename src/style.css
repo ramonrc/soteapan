@@ -16,10 +16,13 @@ body {
 }
 
 p {
-  text-align: center;
   display: block;
   max-width: 50rem;
   margin: 1rem auto;
+}
+
+.video-container {
+  margin: 1rem auto;  
 }
 
 h4 {

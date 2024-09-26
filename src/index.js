@@ -76,8 +76,8 @@ var Home = {
             )),
         m("div", {class: "title"}, m('h1', "San Fernando, Soteapan")),
 	NarracionCafe,
-	m("p", {class: "video-container"}, m("iframe", {src: "media/VideoCafe.mp4", allowfullscreen: "" } ))
-        ))
+	m("p", m("div", {class: "video-container"}, m("iframe", {src: "media/VideoCafe.mp4", allowfullscreen: "" } ))
+        )))
     }
 }
 
